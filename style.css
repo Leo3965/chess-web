@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-
+    background-color: antiquewhite;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,14 +11,16 @@ body {
 }
 
 section {
-    /*background-image: url('imgs/math-banner.png');*/
+    background-image: url('images/reduce-chess-board.jpg');
 }
 
 footer {
+    background-color: antiquewhite !important;
     padding: 1rem 1.5rem 1rem !important;
 }
 
 p {
+    margin-top: 1rem;
     font-weight: 400;
 }
 
@@ -57,19 +59,21 @@ path {
 
 
 .beige {
-    background-color: rgb(110, 110, 98);
+    /*background-color: rgb(110, 110, 98);*/
+    background-image: url("images/reduce-white-concrete-wall.jpg");
 }
 
 .brown {
-    background-color: rgb(169, 43, 43);
+    /*background-color: rgb(169, 43, 43);*/
+    background-image: url("images/reduce-gray-textured-wall.jpg");
 }
 
 .black {
-    fill: rgb(28, 28, 28);
+    fill: #3bc9db;
 }
 
 .white {
-    fill: rgb(255, 255, 255);
+    fill: #ffd43b;
 }
 
 
