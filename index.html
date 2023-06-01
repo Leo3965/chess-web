@@ -3,17 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chess</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
+
+<section class="section">
+    <h1 class="title">Section</h1>
+    <h2 class="subtitle">
+        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
+    </h2>
+</section>
+
+<div class="container is-fullhd">
     <div id="gameboard"></div>
     <p>It is <span id="player"></span>'s go.</p>
     <p id="info-display"></p>
+</div>
 
-    <script src="pieces.js"></script>
-    <script src="app.js"></script>
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Chess</strong> by <a href="https://www.instagram.com/leonardo.freiitas/" target="_blank">Léo Freitas</a>. The source code is licensed
+            <a href="https://github.com/Leo3965/chess-web" target="_blank" >MIT</a>.
+        </p>
+    </div>
+</footer>
+
+<script src="pieces.js"></script>
+<script src="app.js"></script>
+
 </body>
 
 </html>

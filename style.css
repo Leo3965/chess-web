@@ -1,20 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+section {
+    /*background-image: url('imgs/math-banner.png');*/
+}
+
+footer {
+    padding: 1rem 1.5rem 1rem !important;
+}
+
+p {
+    font-weight: 400;
+}
+
 #gameboard {
-    width: 320px;
-    height: 320px;
+    margin-top: 4rem;
+    width: 576px;
+    height: 576px;
     display: flex;
     flex-wrap: wrap;
     background-color: black;
 }
 
 .square {
-    height: 40px;
-    width: 40px;
+    height: 72px;
+    width: 72px;
     position: relative;
 }
 
 .square svg {
-    height: 30px;
-    width: 30px;
+    height: 62px;
+    width: 62px;
     margin: 5px;
     position: relative;
     z-index: -9;
@@ -45,4 +70,25 @@ path {
 
 .white {
     fill: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 700px)
+{
+    #gameboard {
+        margin-top: 2rem;
+        width: 320px;
+        height: 320px;
+    }
+
+    .square {
+        height: 40px;
+        width: 40px;
+    }
+
+    .square svg {
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+    }
 }
